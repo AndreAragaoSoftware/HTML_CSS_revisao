@@ -1,4 +1,5 @@
-/* bloco de codigo para resetar margin e padding */
+/* bloco de codigo para resetar margin e padding 
+atalho = rest* */
 * {
     margin: 0;
     padding: 0;
@@ -19,5 +20,23 @@ body {
 
 .titulo-destaque {
     color: #22D4FD;
+}
+
+.apresentacao{
+    /*site com guia de flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+    /*cria uma margin dos elementos em relação a viewport*/
+    margin: 10%;
+
+    /*com esse codigo a main passa a ser flex*/
+    display: flex;
+
+    /* alinha os elementos conforme os proprios elementos 
+    
+    obs: não alinha os elementos conforme a viewport*/
+    align-items: center;
+
+    /*cria um espaçamento entre os elementos*/
+    justify-content: space-between;
 }
 
