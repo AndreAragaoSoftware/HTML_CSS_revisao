@@ -5,7 +5,14 @@
 }
 
 body {
+    /*Garante que o conteudo está ocupando 100% viewport(tela)*/
+    height: 100vh;
+    
+    /*Limita a largura do elemento filho para n ultrapassar o pai*/
+    box-sizing: border-box;
+   
     background-color:#000000;
+   
     /*cor do testo*/
     color: #f6f6f6;
 }
