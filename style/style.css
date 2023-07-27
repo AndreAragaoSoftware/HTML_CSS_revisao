@@ -46,7 +46,7 @@ body {
     /*site com guia de flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 
     /*cria uma margin dos elementos em relação a viewport*/
-    padding: 5% 15%;
+    padding: 5% 10%;
 
     /*com esse codigo a main passa a ser flex*/
     display: flex;
