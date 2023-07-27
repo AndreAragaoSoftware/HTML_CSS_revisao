@@ -9,8 +9,8 @@ atalho = rest* */
 }
 
 body {
-    /*Garante que o conteudo está ocupando 100% viewport(tela)*/
-    height: 100vh;
+    /*Garante que o conteudo está ocupando 100% viewport(tela)
+    height: 100vh;*/
     
     /*Limita a largura do elemento filho para n ultrapassar o pai*/
     box-sizing: border-box;
@@ -21,6 +21,23 @@ body {
     color: #f6f6f6;
 }
 
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #22D4FD;
+    text-decoration: none;
+}
+
 .titulo-destaque {
     color: #22D4FD;
 }
@@ -29,7 +46,7 @@ body {
     /*site com guia de flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 
     /*cria uma margin dos elementos em relação a viewport*/
-    margin: 15% 10%;
+    padding: 5% 15%;
 
     /*com esse codigo a main passa a ser flex*/
     display: flex;
@@ -84,7 +101,9 @@ body {
 }
 
 .apresentacao__links__botao {
-    
+    display: flex;
+    justify-content: center;
+    gap: 16px;
     
     /*tira o _ do botão */
     text-decoration: none;
@@ -108,4 +127,18 @@ body {
     /*arredonda o botão*/
     border-radius: 8px;
 
+}
+
+.apresentacao__links__botao:hover {
+    background-color: #272727;
+}
+
+.rodape {
+    background-color: #22D4FD;
+    color: #000000;
+    padding: 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
 }
