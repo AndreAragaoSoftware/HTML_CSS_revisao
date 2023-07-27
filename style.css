@@ -1,5 +1,5 @@
 /*Importando font*/
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 /* bloco de codigo para resetar margin e padding 
 atalho = rest* */
@@ -56,7 +56,37 @@ body {
 
 .apresentacao__conteudo__texto {
     font-size: 24px;
-    
+
     /*usando a font importada*/
     font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__links__botao {
+    background-color: #22D4FD;
+    
+    /*tira o _ do botão */
+    text-decoration: none;
+    
+    width: 280px;
+    font-size: 24px;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+
+    /* peso da font*/
+    font-weight: 600;
+
+    /*para saber o padding do elemento no figma tem que selecionar o elemento e precionar alt*/
+    padding: 21.5px 0;
+
+    /*alinha o texto no centro do botão*/
+    text-align: center;
+
+    /*arredonda o botão*/
+    border-radius: 16px;
+
 }
