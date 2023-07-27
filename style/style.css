@@ -1,6 +1,17 @@
 /*Importando font*/
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+/*Criando variaves para reutilizar*/
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-houve: #272727;
+
+    --fonte-princial: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
 /* bloco de codigo para resetar margin e padding 
 atalho = rest* */
 * {
@@ -15,10 +26,10 @@ body {
     /*Limita a largura do elemento filho para n ultrapassar o pai*/
     box-sizing: border-box;
    
-    background-color:#000000;
+    background-color: var(--cor-primaria);
    
     /*cor do testo*/
-    color: #f6f6f6;
+    color: var(--cor-secundaria);
 }
 
 .cabecalho {
@@ -31,15 +42,15 @@ body {
 }
 
 .cabecalho__menu__link {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-weight: 600;
     font-size: 24px;
-    color: #22D4FD;
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
 
 .titulo-destaque {
-    color: #22D4FD;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao {
@@ -75,14 +86,14 @@ body {
     font-size: 36px;
 
     /*usando a font importada*/
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--fonte-princial);
 }
 
 .apresentacao__conteudo__texto {
     font-size: 24px;
 
     /*usando a font importada*/
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__links {
@@ -95,7 +106,7 @@ body {
 }
 
 .apresentacao__links__subtitulo {
-   font-family: 'Krona One', sans-serif;
+   font-family: var(--fonte-princial);
    font-weight: 400;
    font-size: 24px; 
 }
@@ -110,10 +121,10 @@ body {
     
     width: 378px;
     font-size: 24px;
-    color: #f6f6f6;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
 
-    border: 2px solid #22D4FD;
+    border: 2px solid var(--cor-terciaria);
 
     /* peso da font*/
     font-weight: 600;
@@ -130,15 +141,15 @@ body {
 }
 
 .apresentacao__links__botao:hover {
-    background-color: #272727;
+    background-color: var(--cor-houve);
 }
 
 .rodape {
-    background-color: #22D4FD;
-    color: #000000;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
     padding: 24px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 400;
 }
