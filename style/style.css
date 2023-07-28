@@ -172,10 +172,16 @@ body {
     .apresentacao {
         /**/
         flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo {
+        /*com auto utiliza todo espaço do elemento pai*/
+        width: auto;
     }
 
     .cabecalho__menu {
-        /*como o displey flex já está sendo usado no elemento não precisa declarar novamente */
+        /*como o displey flex já está sendo usado no elemento não precisa declarar novamente e é igual a 100% */
         justify-content: center;
     }
     
